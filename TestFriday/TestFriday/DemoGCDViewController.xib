@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoGCDViewController">
+            <connections>
+                <outlet property="buttomBtn" destination="XRT-af-uFT" id="XUK-eo-Mon"/>
+                <outlet property="imageView" destination="F1d-xL-nom" id="L7L-qJ-JOv"/>
+                <outlet property="topBtn" destination="rjT-Zo-wLX" id="OWM-Vm-cfu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjT-Zo-wLX">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="topClick:" destination="-1" eventType="touchUpInside" id="KsZ-1X-Upv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-af-uFT">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttomClick:" destination="-1" eventType="touchUpInside" id="3VB-Jf-TyC"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F1d-xL-nom">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="177" id="mcm-Cz-nzP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mcm-Cz-nzP"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="mcm-Cz-nzP"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F1d-xL-nom" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="70y-oI-9OW"/>
+                <constraint firstItem="rjT-Zo-wLX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="92" id="8pb-9H-2Ts"/>
+                <constraint firstItem="XRT-af-uFT" firstAttribute="top" secondItem="rjT-Zo-wLX" secondAttribute="bottom" constant="35" id="AXG-J8-e2L"/>
+                <constraint firstAttribute="bottom" secondItem="rjT-Zo-wLX" secondAttribute="bottom" constant="156" id="Kze-Xu-z15"/>
+                <constraint firstItem="F1d-xL-nom" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VCd-jp-lkC"/>
+                <constraint firstItem="XRT-af-uFT" firstAttribute="centerX" secondItem="F1d-xL-nom" secondAttribute="centerX" id="kNf-6w-6bF"/>
+                <constraint firstItem="F1d-xL-nom" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="l9L-ee-v4Y"/>
+                <constraint firstItem="XRT-af-uFT" firstAttribute="leading" secondItem="rjT-Zo-wLX" secondAttribute="leading" id="yW0-a0-U33"/>
+                <constraint firstItem="XRT-af-uFT" firstAttribute="trailing" secondItem="rjT-Zo-wLX" secondAttribute="trailing" id="ybZ-fb-wRN"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="rjT-Zo-wLX"/>
+                    <exclude reference="XRT-af-uFT"/>
+                    <exclude reference="F1d-xL-nom"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="70y-oI-9OW"/>
+                    <exclude reference="VCd-jp-lkC"/>
+                    <exclude reference="l9L-ee-v4Y"/>
+                    <exclude reference="8pb-9H-2Ts"/>
+                    <exclude reference="Kze-Xu-z15"/>
+                    <exclude reference="AXG-J8-e2L"/>
+                    <exclude reference="kNf-6w-6bF"/>
+                    <exclude reference="yW0-a0-U33"/>
+                    <exclude reference="ybZ-fb-wRN"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="rjT-Zo-wLX"/>
+                    <include reference="XRT-af-uFT"/>
+                    <include reference="F1d-xL-nom"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="70y-oI-9OW"/>
+                    <include reference="VCd-jp-lkC"/>
+                    <include reference="l9L-ee-v4Y"/>
+                    <include reference="8pb-9H-2Ts"/>
+                    <include reference="Kze-Xu-z15"/>
+                    <include reference="AXG-J8-e2L"/>
+                    <include reference="kNf-6w-6bF"/>
+                    <include reference="yW0-a0-U33"/>
+                    <include reference="ybZ-fb-wRN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="518" y="383"/>
+        </view>
+    </objects>
+</document>
