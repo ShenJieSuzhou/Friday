@@ -9,7 +9,9 @@
 #import "YYWebImageExample.h"
 #import "YYKit.h"
 #import <QuartzCore/QuartzCore.h>
-#import <SDWebImage/SDWebImageDownloader.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+//#import <SDWebImage/FLAnimatedImageView.h>
+#import <SDWebImage/FLAnimatedImageView+WebCache.h>
 
 
 #define kCellHeight ceil((kScreenWidth) * 3.0 / 4.0)
@@ -38,18 +40,13 @@
 @property (nonatomic, strong) UIActivityIndicatorView *indicator;
 @property (nonatomic, strong) CAShapeLayer *progressLayer;
 @property (nonatomic, strong) UILabel *label;
-@property (nonatomic, strong) UIImageView *webImageView;
+@property (nonatomic, strong) FLAnimatedImageView *webImageView;
 @property (nonatomic, strong) dispatch_semaphore_t lock;
 
 @end
 
 @implementation YYWebImageExampleCell
 
-- (instancetype)init{
-    self = [super init];
-    _lock = dispatch_semaphore_create(1);
-    return self;
-}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -58,7 +55,7 @@
     self.size = CGSizeMake(kScreenWidth, kCellHeight);
     self.contentView.size = self.size;
     
-    _webImageView = [UIImageView new];
+    _webImageView = [FLAnimatedImageView new];
     _webImageView.size = self.size;
     _webImageView.clipsToBounds = YES;
     _webImageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -105,45 +102,71 @@
     self.progressLayer.strokeEnd = 0;
     [CATransaction commit];
     
-    if(_webImageView.image){
-        return;
-    }
+//    if(_webImageView.image){
+//        return;
+//    }
     
-    [_webImageView setImageWithURL:url
-                          progress:^(NSInteger receivedSize, NSInteger expectedSize){
-                              NSLog(@"receivedSize:%ld  expectedSize:%ld", (long)receivedSize, (long)expectedSize);
-                              dispatch_async(dispatch_get_main_queue(), ^{
-                                  if(receivedSize > 0 && receivedSize > 0){
-                                      CGFloat progress = (CGFloat)receivedSize / expectedSize;
-                                      progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
-                                      if(_progressLayer.hidden) _progressLayer.hidden = NO;
-                                      _progressLayer.strokeEnd = progress;
-                                  }
-                              });
-                              
-                          } completion:^(UIImage *image, NSData *data, NSError *error, BOOL finished){
-                              dispatch_async(dispatch_get_main_queue(), ^{
-                                  if(image){
-                                      CATransition *transition = [CATransition animation];
-                                      transition.duration = 0.2;
-                                      transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-                                      transition.type = kCATransitionFade;
-                                      [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
-                                      
-                                      [_webImageView setImage:image];
-                                  }
-                                  
-                                  if(finished){
-                                      _progressLayer.hidden = YES;
-                                  }
-                              });
-                          }];
+//    [_webImageView setImageWithURL:url
+//                          progress:^(NSInteger receivedSize, NSInteger expectedSize){
+//                              NSLog(@"receivedSize:%ld  expectedSize:%ld", (long)receivedSize, (long)expectedSize);
+//                              dispatch_async(dispatch_get_main_queue(), ^{
+//                                  if(receivedSize > 0 && receivedSize > 0){
+//                                      CGFloat progress = (CGFloat)receivedSize / expectedSize;
+//                                      progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
+//                                      if(_progressLayer.hidden) _progressLayer.hidden = NO;
+//                                      _progressLayer.strokeEnd = progress;
+//                                  }
+//                              });
+//                              
+//                          } completion:^(UIImage *image, NSData *data, NSError *error, BOOL finished){
+//                              dispatch_async(dispatch_get_main_queue(), ^{
+//                                  if(image){
+//                                      CATransition *transition = [CATransition animation];
+//                                      transition.duration = 0.2;
+//                                      transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//                                      transition.type = kCATransitionFade;
+//                                      [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
+//                                      
+//                                      [_webImageView setImage:image];
+//                                  }
+//                                  
+//                                  if(finished){
+//                                      _progressLayer.hidden = YES;
+//                                  }
+//                              });
+//                          }];
+    
+    
+    [_webImageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(receivedSize > 0 && receivedSize > 0){
+                CGFloat progress = (CGFloat)receivedSize / expectedSize;
+                progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
+                if(_progressLayer.hidden) _progressLayer.hidden = NO;
+                _progressLayer.strokeEnd = progress;
+            }
+        });
+    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(image){
+                _progressLayer.hidden = YES;
+                CATransition *transition = [CATransition animation];
+                transition.duration = 0.2;
+                transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                transition.type = kCATransitionFade;
+                [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
+            }
+        });
+    }];
 }
 
 @end
 
-@implementation YYWebImageExample
-@synthesize imageLinks = _imageLinks;
+@implementation YYWebImageExample{
+    NSArray *_imageLinks;
+}
+
+//@synthesize imageLinks = _imageLinks;
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -194,7 +217,7 @@
                        @"http://littlesvr.ca/apng/images/Contact.webp",
                        ];
     
-    self.imageLinks = [[NSMutableArray alloc] initWithArray:links];
+    _imageLinks = links;
     [self.tableView reloadData];
     [self scrollViewDidScroll:self.tableView];
 }
@@ -226,7 +249,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _imageLinks.count;
+    return _imageLinks.count * 4;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -234,12 +257,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"cell";//[NSString stringWithFormat:@"cell%ld%ld",indexPath.section,indexPath.row];
-    YYWebImageExampleCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(!cell){
-        cell = [[YYWebImageExampleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
+    YYWebImageExampleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) cell = [[YYWebImageExampleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     [cell setImageURL:[NSURL URLWithString:_imageLinks[indexPath.row % _imageLinks.count]]];
     return cell;
 }

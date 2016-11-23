@@ -11,6 +11,6 @@
 
 @interface YYWebImageExample : UITableViewController
 
-@property (strong, nonnull) NSMutableArray *imageLinks;
+
 
 @end

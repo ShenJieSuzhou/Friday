@@ -8,6 +8,7 @@
 
 #import "UIImageView+YYAdd.h"
 #import <SDWebImage/SDWebImageDownloader.h>
+#import <SDWebImage/SDWebImageManager.h>
 
 @implementation UIImageView (YYAdd)
 
@@ -29,6 +30,11 @@
     } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
         completion(image, data, error, finished);
     }];
+    
+    
+//    [[SDWebImageManager sharedManager] ]
+    
+    
 }
 
 //- (void)loadImage:(NSURL *)url{
