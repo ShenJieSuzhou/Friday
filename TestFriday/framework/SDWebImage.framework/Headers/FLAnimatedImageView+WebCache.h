@@ -108,7 +108,8 @@
                  completed:(nullable SDExternalCompletionBlock)completedBlock;
 
 /**
- * Load the image at the given url (either from cache or download) and load it in this imageView. It works with both static and dynamic images
+ * Load the image at the given url (either from cache or download) and load it in this imageView. 
+ It works with both static and dynamic images
  * The download is asynchronous and cached.
  * Uses a placeholder until the request finishes.
  *
