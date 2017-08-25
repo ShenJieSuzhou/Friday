@@ -10,12 +10,31 @@
 
 @implementation YYTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    self.delaysContentTouches = NO;
+    self.canCancelContentTouches = YES;
+    self.separatorStyle = UITableViewCellSelectionStyleNone;
+    
+    UIView *wrapView = self.subviews.firstObject;
+    if (wrapView && [NSStringFromClass(wrapView.class) hasSuffix:@"WrapperView"]) {
+        for(UIGestureRecognizer *gesture in wrapView.gestureRecognizers){
+            if ([NSStringFromClass(gesture.class) containsString:@"DelayedTouchesBegan"] ) {
+                gesture.enabled = NO;
+                break;
+            }
+        }
+        
+    }
+    
+    return self;
 }
-*/
+
+- (BOOL)touchesShouldCancelInContentView:(UIView *)view {
+    if ( [view isKindOfClass:[UIControl class]]) {
+        return YES;
+    }
+    return [super touchesShouldCancelInContentView:view];
+}
 
 @end

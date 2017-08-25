@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  LBSDemo
+
+  Created by silicon on 17/5/15.
+  Copyright © 2017年 com.snailgames. All rights reserved.
+*/
+"QRCodeDes" = "将二维码/条码放入框内, 即可自动扫描";

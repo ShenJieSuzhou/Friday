@@ -6,9 +6,16 @@
 //  Copyright © 2016年 com.snailgames. All rights reserved.
 //
 
-#import "UIColor.h"
+#import "UIColor+YYAdd.h"
+#import "NSString+YYAdd.h"
 
 @implementation UIColor (YYAdd)
+
+static inline NSUInteger hexStrToInt(NSString *str) {
+    uint32_t result = 0;
+    sscanf([str UTF8String], "%X", &result);
+    return result;
+}
 
 static BOOL hexStrToRGBA(NSString *str,
                          CGFloat *r, CGFloat *g, CGFloat *b, CGFloat *a) {

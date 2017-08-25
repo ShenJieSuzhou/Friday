@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface WBStatusHelper : NSObject
+
++ (UIImage *)imageWithPath:(NSString *)path;
 
 @end

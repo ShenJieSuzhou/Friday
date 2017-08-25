@@ -12,6 +12,9 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
     self.title = @"测试工程";
     self.titles = @[].mutableCopy;
     self.classnames = @[].mutableCopy;

@@ -10,4 +10,9 @@
 
 @implementation YYImage
 
++ (nullable YYImage *)imageNamed:(NSString *)name{
+    
+    return nil;
+}
+
 @end

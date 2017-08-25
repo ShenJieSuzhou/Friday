@@ -1,0 +1,6 @@
+framework module SnailQRCode {
+  umbrella header "SnailQRCode.h"
+
+  export *
+  module * { export * }
+}

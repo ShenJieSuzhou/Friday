@@ -10,4 +10,9 @@
 
 @implementation WBStatusHelper
 
++ (UIImage *)imageWithPath:(NSString *)path{
+    
+    return nil;
+}
+
 @end

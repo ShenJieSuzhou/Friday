@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444993451EEE78240018DE1D /* UIImageViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 444993441EEE78240018DE1D /* UIImageViewAnimator.m */; };
+		444993491EEE97530018DE1D /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 444993461EEE97530018DE1D /* test1.png */; };
+		4449934A1EEE97530018DE1D /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 444993471EEE97530018DE1D /* test2.png */; };
+		4449934B1EEE97530018DE1D /* test3.png in Resources */ = {isa = PBXBuildFile; fileRef = 444993481EEE97530018DE1D /* test3.png */; };
+		446B22CB1EDFF62700F5BFFD /* snail logo2旋转0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B223E1EDFF62700F5BFFD /* snail logo2旋转0001.jpg */; };
+		446B22CC1EDFF62700F5BFFD /* snail logo2旋转0002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B223F1EDFF62700F5BFFD /* snail logo2旋转0002.jpg */; };
+		446B22CD1EDFF62700F5BFFD /* snail logo2旋转0003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22401EDFF62700F5BFFD /* snail logo2旋转0003.jpg */; };
+		446B22CE1EDFF62700F5BFFD /* snail logo2旋转0004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22411EDFF62700F5BFFD /* snail logo2旋转0004.jpg */; };
+		446B22CF1EDFF62700F5BFFD /* snail logo2旋转0005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22421EDFF62700F5BFFD /* snail logo2旋转0005.jpg */; };
+		446B22D01EDFF62700F5BFFD /* snail logo2旋转0006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22431EDFF62700F5BFFD /* snail logo2旋转0006.jpg */; };
+		446B22D11EDFF62700F5BFFD /* snail logo2旋转0007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22441EDFF62700F5BFFD /* snail logo2旋转0007.jpg */; };
+		446B22D21EDFF62700F5BFFD /* snail logo2旋转0008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22451EDFF62700F5BFFD /* snail logo2旋转0008.jpg */; };
+		446B22D31EDFF62700F5BFFD /* snail logo2旋转0009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22461EDFF62700F5BFFD /* snail logo2旋转0009.jpg */; };
+		446B22D41EDFF62700F5BFFD /* snail logo2旋转0010.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22471EDFF62700F5BFFD /* snail logo2旋转0010.jpg */; };
+		446B22D51EDFF62700F5BFFD /* snail logo2旋转0011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22481EDFF62700F5BFFD /* snail logo2旋转0011.jpg */; };
+		446B22D61EDFF62700F5BFFD /* snail logo2旋转0012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22491EDFF62700F5BFFD /* snail logo2旋转0012.jpg */; };
+		446B22D71EDFF62700F5BFFD /* snail logo2旋转0013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224A1EDFF62700F5BFFD /* snail logo2旋转0013.jpg */; };
+		446B22D81EDFF62700F5BFFD /* snail logo2旋转0014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224B1EDFF62700F5BFFD /* snail logo2旋转0014.jpg */; };
+		446B22D91EDFF62700F5BFFD /* snail logo2旋转0015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224C1EDFF62700F5BFFD /* snail logo2旋转0015.jpg */; };
+		446B22DA1EDFF62700F5BFFD /* snail logo2旋转0016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224D1EDFF62700F5BFFD /* snail logo2旋转0016.jpg */; };
+		446B22DB1EDFF62700F5BFFD /* snail logo2旋转0017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224E1EDFF62700F5BFFD /* snail logo2旋转0017.jpg */; };
+		446B22DC1EDFF62700F5BFFD /* snail logo2旋转0018.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B224F1EDFF62700F5BFFD /* snail logo2旋转0018.jpg */; };
+		446B22DD1EDFF62700F5BFFD /* snail logo2旋转0019.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22501EDFF62700F5BFFD /* snail logo2旋转0019.jpg */; };
+		446B22DE1EDFF62700F5BFFD /* snail logo2旋转0020.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22511EDFF62700F5BFFD /* snail logo2旋转0020.jpg */; };
+		446B22DF1EDFF62700F5BFFD /* snail logo2旋转0021.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22521EDFF62700F5BFFD /* snail logo2旋转0021.jpg */; };
+		446B22E01EDFF62700F5BFFD /* snail logo2旋转0022.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22531EDFF62700F5BFFD /* snail logo2旋转0022.jpg */; };
+		446B22E11EDFF62700F5BFFD /* snail logo2旋转0023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22541EDFF62700F5BFFD /* snail logo2旋转0023.jpg */; };
+		446B22E21EDFF62700F5BFFD /* snail logo2旋转0024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22551EDFF62700F5BFFD /* snail logo2旋转0024.jpg */; };
+		446B22E31EDFF62700F5BFFD /* snail logo2旋转0025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22561EDFF62700F5BFFD /* snail logo2旋转0025.jpg */; };
+		446B22E41EDFF62700F5BFFD /* snail logo2旋转0026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22571EDFF62700F5BFFD /* snail logo2旋转0026.jpg */; };
+		446B22E51EDFF62700F5BFFD /* snail logo2旋转0027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22581EDFF62700F5BFFD /* snail logo2旋转0027.jpg */; };
+		446B22E61EDFF62700F5BFFD /* snail logo2旋转0028.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22591EDFF62700F5BFFD /* snail logo2旋转0028.jpg */; };
+		446B22E71EDFF62700F5BFFD /* snail logo2旋转0029.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225A1EDFF62700F5BFFD /* snail logo2旋转0029.jpg */; };
+		446B22E81EDFF62700F5BFFD /* snail logo2旋转0030.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225B1EDFF62700F5BFFD /* snail logo2旋转0030.jpg */; };
+		446B22E91EDFF62700F5BFFD /* snail logo2旋转0031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225C1EDFF62700F5BFFD /* snail logo2旋转0031.jpg */; };
+		446B22EA1EDFF62700F5BFFD /* snail logo2旋转0032.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225D1EDFF62700F5BFFD /* snail logo2旋转0032.jpg */; };
+		446B22EB1EDFF62700F5BFFD /* snail logo2旋转0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225E1EDFF62700F5BFFD /* snail logo2旋转0033.jpg */; };
+		446B22EC1EDFF62700F5BFFD /* snail logo2旋转0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B225F1EDFF62700F5BFFD /* snail logo2旋转0034.jpg */; };
+		446B22ED1EDFF62700F5BFFD /* snail logo2旋转0035.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22601EDFF62700F5BFFD /* snail logo2旋转0035.jpg */; };
+		446B22EE1EDFF62700F5BFFD /* snail logo2旋转0036.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22611EDFF62700F5BFFD /* snail logo2旋转0036.jpg */; };
+		446B22EF1EDFF62700F5BFFD /* snail logo2旋转0037.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22621EDFF62700F5BFFD /* snail logo2旋转0037.jpg */; };
+		446B22F01EDFF62700F5BFFD /* snail logo2旋转0038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22631EDFF62700F5BFFD /* snail logo2旋转0038.jpg */; };
+		446B22F11EDFF62700F5BFFD /* snail logo2旋转0039.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22641EDFF62700F5BFFD /* snail logo2旋转0039.jpg */; };
+		446B22F21EDFF62700F5BFFD /* snail logo2旋转0040.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22651EDFF62700F5BFFD /* snail logo2旋转0040.jpg */; };
+		446B22F31EDFF62700F5BFFD /* snail logo2旋转0041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22661EDFF62700F5BFFD /* snail logo2旋转0041.jpg */; };
+		446B22F41EDFF62700F5BFFD /* snail logo2旋转0042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22671EDFF62700F5BFFD /* snail logo2旋转0042.jpg */; };
+		446B22F51EDFF62700F5BFFD /* snail logo2旋转0043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22681EDFF62700F5BFFD /* snail logo2旋转0043.jpg */; };
+		446B22F61EDFF62700F5BFFD /* snail logo2旋转0044.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22691EDFF62700F5BFFD /* snail logo2旋转0044.jpg */; };
+		446B22F71EDFF62700F5BFFD /* snail logo2旋转0045.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226A1EDFF62700F5BFFD /* snail logo2旋转0045.jpg */; };
+		446B22F81EDFF62700F5BFFD /* snail logo2旋转0046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226B1EDFF62700F5BFFD /* snail logo2旋转0046.jpg */; };
+		446B22F91EDFF62700F5BFFD /* snail logo2旋转0047.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226C1EDFF62700F5BFFD /* snail logo2旋转0047.jpg */; };
+		446B22FA1EDFF62700F5BFFD /* snail logo2旋转0048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226D1EDFF62700F5BFFD /* snail logo2旋转0048.jpg */; };
+		446B22FB1EDFF62700F5BFFD /* snail logo2旋转0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226E1EDFF62700F5BFFD /* snail logo2旋转0049.jpg */; };
+		446B22FC1EDFF62700F5BFFD /* snail logo2旋转0050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B226F1EDFF62700F5BFFD /* snail logo2旋转0050.jpg */; };
+		446B22FD1EDFF62700F5BFFD /* snail logo2旋转0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22701EDFF62700F5BFFD /* snail logo2旋转0051.jpg */; };
+		446B22FE1EDFF62700F5BFFD /* snail logo2旋转0052.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22711EDFF62700F5BFFD /* snail logo2旋转0052.jpg */; };
+		446B22FF1EDFF62700F5BFFD /* snail logo2旋转0053.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22721EDFF62700F5BFFD /* snail logo2旋转0053.jpg */; };
+		446B23001EDFF62700F5BFFD /* snail logo2旋转0054.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22731EDFF62700F5BFFD /* snail logo2旋转0054.jpg */; };
+		446B23011EDFF62700F5BFFD /* snail logo2旋转0055.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22741EDFF62700F5BFFD /* snail logo2旋转0055.jpg */; };
+		446B23021EDFF62700F5BFFD /* snail logo2旋转0056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22751EDFF62700F5BFFD /* snail logo2旋转0056.jpg */; };
+		446B23031EDFF62700F5BFFD /* snail logo2旋转0057.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22761EDFF62700F5BFFD /* snail logo2旋转0057.jpg */; };
+		446B23041EDFF62700F5BFFD /* snail logo2旋转0058.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22771EDFF62700F5BFFD /* snail logo2旋转0058.jpg */; };
+		446B23051EDFF62700F5BFFD /* snail logo2旋转0059.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22781EDFF62700F5BFFD /* snail logo2旋转0059.jpg */; };
+		446B23061EDFF62700F5BFFD /* snail logo2旋转0060.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22791EDFF62700F5BFFD /* snail logo2旋转0060.jpg */; };
+		446B23071EDFF62700F5BFFD /* snail logo2旋转0061.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227A1EDFF62700F5BFFD /* snail logo2旋转0061.jpg */; };
+		446B23081EDFF62700F5BFFD /* snail logo2旋转0062.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227B1EDFF62700F5BFFD /* snail logo2旋转0062.jpg */; };
+		446B23091EDFF62700F5BFFD /* snail logo2旋转0063.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227C1EDFF62700F5BFFD /* snail logo2旋转0063.jpg */; };
+		446B230A1EDFF62700F5BFFD /* snail logo2旋转0064.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227D1EDFF62700F5BFFD /* snail logo2旋转0064.jpg */; };
+		446B230B1EDFF62700F5BFFD /* snail logo2旋转0065.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227E1EDFF62700F5BFFD /* snail logo2旋转0065.jpg */; };
+		446B230C1EDFF62700F5BFFD /* snail logo2旋转0066.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B227F1EDFF62700F5BFFD /* snail logo2旋转0066.jpg */; };
+		446B230D1EDFF62700F5BFFD /* snail logo2旋转0067.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22801EDFF62700F5BFFD /* snail logo2旋转0067.jpg */; };
+		446B230E1EDFF62700F5BFFD /* snail logo2旋转0068.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22811EDFF62700F5BFFD /* snail logo2旋转0068.jpg */; };
+		446B230F1EDFF62700F5BFFD /* snail logo2旋转0069.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22821EDFF62700F5BFFD /* snail logo2旋转0069.jpg */; };
+		446B23101EDFF62700F5BFFD /* snail logo2旋转0070.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22831EDFF62700F5BFFD /* snail logo2旋转0070.jpg */; };
+		446B23111EDFF62700F5BFFD /* snail logo2旋转0071.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22841EDFF62700F5BFFD /* snail logo2旋转0071.jpg */; };
+		446B23121EDFF62700F5BFFD /* snail logo2旋转0072.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22851EDFF62700F5BFFD /* snail logo2旋转0072.jpg */; };
+		446B23131EDFF62700F5BFFD /* snail logo2旋转0073.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22861EDFF62700F5BFFD /* snail logo2旋转0073.jpg */; };
+		446B23141EDFF62700F5BFFD /* snail logo2旋转0074.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22871EDFF62700F5BFFD /* snail logo2旋转0074.jpg */; };
+		446B23151EDFF62700F5BFFD /* snail logo2旋转0075.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22881EDFF62700F5BFFD /* snail logo2旋转0075.jpg */; };
+		446B23161EDFF62700F5BFFD /* snail logo2旋转0076.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22891EDFF62700F5BFFD /* snail logo2旋转0076.jpg */; };
+		446B23171EDFF62700F5BFFD /* snail logo2旋转0077.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228A1EDFF62700F5BFFD /* snail logo2旋转0077.jpg */; };
+		446B23181EDFF62700F5BFFD /* snail logo2旋转0078.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228B1EDFF62700F5BFFD /* snail logo2旋转0078.jpg */; };
+		446B23191EDFF62700F5BFFD /* snail logo2旋转0079.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228C1EDFF62700F5BFFD /* snail logo2旋转0079.jpg */; };
+		446B231A1EDFF62700F5BFFD /* snail logo2旋转0080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228D1EDFF62700F5BFFD /* snail logo2旋转0080.jpg */; };
+		446B231B1EDFF62700F5BFFD /* snail logo2旋转0081.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228E1EDFF62700F5BFFD /* snail logo2旋转0081.jpg */; };
+		446B231C1EDFF62700F5BFFD /* snail logo2旋转0082.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B228F1EDFF62700F5BFFD /* snail logo2旋转0082.jpg */; };
+		446B231D1EDFF62700F5BFFD /* snail logo2旋转0083.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22901EDFF62700F5BFFD /* snail logo2旋转0083.jpg */; };
+		446B231E1EDFF62700F5BFFD /* snail logo2旋转0084.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22911EDFF62700F5BFFD /* snail logo2旋转0084.jpg */; };
+		446B231F1EDFF62700F5BFFD /* snail logo2旋转0085.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22921EDFF62700F5BFFD /* snail logo2旋转0085.jpg */; };
+		446B23201EDFF62700F5BFFD /* snail logo2旋转0086.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22931EDFF62700F5BFFD /* snail logo2旋转0086.jpg */; };
+		446B23211EDFF62700F5BFFD /* snail logo2旋转0087.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22941EDFF62700F5BFFD /* snail logo2旋转0087.jpg */; };
+		446B23221EDFF62700F5BFFD /* snail logo2旋转0088.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22951EDFF62700F5BFFD /* snail logo2旋转0088.jpg */; };
+		446B23231EDFF62700F5BFFD /* snail logo2旋转0089.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22961EDFF62700F5BFFD /* snail logo2旋转0089.jpg */; };
+		446B23241EDFF62700F5BFFD /* snail logo2旋转0090.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22971EDFF62700F5BFFD /* snail logo2旋转0090.jpg */; };
+		446B23251EDFF62700F5BFFD /* snail logo2旋转0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22981EDFF62700F5BFFD /* snail logo2旋转0091.jpg */; };
+		446B23261EDFF62700F5BFFD /* snail logo2旋转0092.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22991EDFF62700F5BFFD /* snail logo2旋转0092.jpg */; };
+		446B23271EDFF62700F5BFFD /* snail logo2旋转0093.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229A1EDFF62700F5BFFD /* snail logo2旋转0093.jpg */; };
+		446B23281EDFF62700F5BFFD /* snail logo2旋转0094.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229B1EDFF62700F5BFFD /* snail logo2旋转0094.jpg */; };
+		446B23291EDFF62700F5BFFD /* snail logo2旋转0095.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229C1EDFF62700F5BFFD /* snail logo2旋转0095.jpg */; };
+		446B232A1EDFF62700F5BFFD /* snail logo2旋转0096.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229D1EDFF62700F5BFFD /* snail logo2旋转0096.jpg */; };
+		446B232B1EDFF62700F5BFFD /* snail logo2旋转0097.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229E1EDFF62700F5BFFD /* snail logo2旋转0097.jpg */; };
+		446B232C1EDFF62700F5BFFD /* snail logo2旋转0098.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B229F1EDFF62700F5BFFD /* snail logo2旋转0098.jpg */; };
+		446B232D1EDFF62700F5BFFD /* snail logo2旋转0099.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A01EDFF62700F5BFFD /* snail logo2旋转0099.jpg */; };
+		446B232E1EDFF62700F5BFFD /* snail logo2旋转0100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A11EDFF62700F5BFFD /* snail logo2旋转0100.jpg */; };
+		446B232F1EDFF62700F5BFFD /* snail logo2旋转0101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A21EDFF62700F5BFFD /* snail logo2旋转0101.jpg */; };
+		446B23301EDFF62700F5BFFD /* snail logo2旋转0102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A31EDFF62700F5BFFD /* snail logo2旋转0102.jpg */; };
+		446B23311EDFF62700F5BFFD /* snail logo2旋转0103.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A41EDFF62700F5BFFD /* snail logo2旋转0103.jpg */; };
+		446B23321EDFF62700F5BFFD /* snail logo2旋转0104.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A51EDFF62700F5BFFD /* snail logo2旋转0104.jpg */; };
+		446B23331EDFF62700F5BFFD /* snail logo2旋转0105.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A61EDFF62700F5BFFD /* snail logo2旋转0105.jpg */; };
+		446B23341EDFF62700F5BFFD /* snail logo2旋转0106.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A71EDFF62700F5BFFD /* snail logo2旋转0106.jpg */; };
+		446B23351EDFF62700F5BFFD /* snail logo2旋转0107.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A81EDFF62700F5BFFD /* snail logo2旋转0107.jpg */; };
+		446B23361EDFF62700F5BFFD /* snail logo2旋转0108.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22A91EDFF62700F5BFFD /* snail logo2旋转0108.jpg */; };
+		446B23371EDFF62700F5BFFD /* snail logo2旋转0109.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AA1EDFF62700F5BFFD /* snail logo2旋转0109.jpg */; };
+		446B23381EDFF62700F5BFFD /* snail logo2旋转0110.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AB1EDFF62700F5BFFD /* snail logo2旋转0110.jpg */; };
+		446B23391EDFF62700F5BFFD /* snail logo2旋转0111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AC1EDFF62700F5BFFD /* snail logo2旋转0111.jpg */; };
+		446B233A1EDFF62700F5BFFD /* snail logo2旋转0112.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AD1EDFF62700F5BFFD /* snail logo2旋转0112.jpg */; };
+		446B233B1EDFF62700F5BFFD /* snail logo2旋转0113.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AE1EDFF62700F5BFFD /* snail logo2旋转0113.jpg */; };
+		446B233C1EDFF62700F5BFFD /* snail logo2旋转0114.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22AF1EDFF62700F5BFFD /* snail logo2旋转0114.jpg */; };
+		446B233D1EDFF62700F5BFFD /* snail logo2旋转0115.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B01EDFF62700F5BFFD /* snail logo2旋转0115.jpg */; };
+		446B233E1EDFF62700F5BFFD /* snail logo2旋转0116.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B11EDFF62700F5BFFD /* snail logo2旋转0116.jpg */; };
+		446B233F1EDFF62700F5BFFD /* snail logo2旋转0117.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B21EDFF62700F5BFFD /* snail logo2旋转0117.jpg */; };
+		446B23401EDFF62700F5BFFD /* snail logo2旋转0118.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B31EDFF62700F5BFFD /* snail logo2旋转0118.jpg */; };
+		446B23411EDFF62700F5BFFD /* snail logo2旋转0119.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B41EDFF62700F5BFFD /* snail logo2旋转0119.jpg */; };
+		446B23421EDFF62700F5BFFD /* snail logo2旋转0120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B51EDFF62700F5BFFD /* snail logo2旋转0120.jpg */; };
+		446B23431EDFF62700F5BFFD /* snail logo2旋转0121.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B61EDFF62700F5BFFD /* snail logo2旋转0121.jpg */; };
+		446B23441EDFF62700F5BFFD /* snail logo2旋转0122.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B71EDFF62700F5BFFD /* snail logo2旋转0122.jpg */; };
+		446B23451EDFF62700F5BFFD /* snail logo2旋转0123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B81EDFF62700F5BFFD /* snail logo2旋转0123.jpg */; };
+		446B23461EDFF62700F5BFFD /* snail logo2旋转0124.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22B91EDFF62700F5BFFD /* snail logo2旋转0124.jpg */; };
+		446B23471EDFF62700F5BFFD /* snail logo2旋转0125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BA1EDFF62700F5BFFD /* snail logo2旋转0125.jpg */; };
+		446B23481EDFF62700F5BFFD /* snail logo2旋转0126.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BB1EDFF62700F5BFFD /* snail logo2旋转0126.jpg */; };
+		446B23491EDFF62700F5BFFD /* snail logo2旋转0127.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BC1EDFF62700F5BFFD /* snail logo2旋转0127.jpg */; };
+		446B234A1EDFF62700F5BFFD /* snail logo2旋转0128.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BD1EDFF62700F5BFFD /* snail logo2旋转0128.jpg */; };
+		446B234B1EDFF62700F5BFFD /* snail logo2旋转0129.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BE1EDFF62700F5BFFD /* snail logo2旋转0129.jpg */; };
+		446B234C1EDFF62700F5BFFD /* snail logo2旋转0130.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22BF1EDFF62700F5BFFD /* snail logo2旋转0130.jpg */; };
+		446B234D1EDFF62700F5BFFD /* snail logo2旋转0131.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C01EDFF62700F5BFFD /* snail logo2旋转0131.jpg */; };
+		446B234E1EDFF62700F5BFFD /* snail logo2旋转0132.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C11EDFF62700F5BFFD /* snail logo2旋转0132.jpg */; };
+		446B234F1EDFF62700F5BFFD /* snail logo2旋转0133.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C21EDFF62700F5BFFD /* snail logo2旋转0133.jpg */; };
+		446B23501EDFF62700F5BFFD /* snail logo2旋转0134.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C31EDFF62700F5BFFD /* snail logo2旋转0134.jpg */; };
+		446B23511EDFF62700F5BFFD /* snail logo2旋转0135.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C41EDFF62700F5BFFD /* snail logo2旋转0135.jpg */; };
+		446B23521EDFF62700F5BFFD /* snail logo2旋转0136.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C51EDFF62700F5BFFD /* snail logo2旋转0136.jpg */; };
+		446B23531EDFF62700F5BFFD /* snail logo2旋转0137.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C61EDFF62700F5BFFD /* snail logo2旋转0137.jpg */; };
+		446B23541EDFF62700F5BFFD /* snail logo2旋转0138.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C71EDFF62700F5BFFD /* snail logo2旋转0138.jpg */; };
+		446B23551EDFF62700F5BFFD /* snail logo2旋转0139.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C81EDFF62700F5BFFD /* snail logo2旋转0139.jpg */; };
+		446B23561EDFF62700F5BFFD /* snail logo2旋转0140.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22C91EDFF62700F5BFFD /* snail logo2旋转0140.jpg */; };
+		446B23571EDFF62700F5BFFD /* snail logo2旋转0141.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446B22CA1EDFF62700F5BFFD /* snail logo2旋转0141.jpg */; };
+		4484CFFC1ED3DD2700662A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4484CFFB1ED3DD2700662A19 /* main.m */; };
+		4484CFFF1ED3DD2700662A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4484CFFE1ED3DD2700662A19 /* AppDelegate.m */; };
+		4484D0021ED3DD2700662A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4484D0011ED3DD2700662A19 /* ViewController.m */; };
+		4484D0051ED3DD2700662A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4484D0031ED3DD2700662A19 /* Main.storyboard */; };
+		4484D0071ED3DD2700662A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4484D0061ED3DD2700662A19 /* Assets.xcassets */; };
+		4484D00A1ED3DD2700662A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4484D0081ED3DD2700662A19 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		444993431EEE78240018DE1D /* UIImageViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageViewAnimator.h; path = LogoAnimationDemo/UIImageViewAnimator.h; sourceTree = "<group>"; };
+		444993441EEE78240018DE1D /* UIImageViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageViewAnimator.m; path = LogoAnimationDemo/UIImageViewAnimator.m; sourceTree = "<group>"; };
+		444993461EEE97530018DE1D /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test1.png; path = resource/test1.png; sourceTree = "<group>"; };
+		444993471EEE97530018DE1D /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test2.png; path = resource/test2.png; sourceTree = "<group>"; };
+		444993481EEE97530018DE1D /* test3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test3.png; path = resource/test3.png; sourceTree = "<group>"; };
+		446B223E1EDFF62700F5BFFD /* snail logo2旋转0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0001.jpg"; sourceTree = "<group>"; };
+		446B223F1EDFF62700F5BFFD /* snail logo2旋转0002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0002.jpg"; sourceTree = "<group>"; };
+		446B22401EDFF62700F5BFFD /* snail logo2旋转0003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0003.jpg"; sourceTree = "<group>"; };
+		446B22411EDFF62700F5BFFD /* snail logo2旋转0004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0004.jpg"; sourceTree = "<group>"; };
+		446B22421EDFF62700F5BFFD /* snail logo2旋转0005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0005.jpg"; sourceTree = "<group>"; };
+		446B22431EDFF62700F5BFFD /* snail logo2旋转0006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0006.jpg"; sourceTree = "<group>"; };
+		446B22441EDFF62700F5BFFD /* snail logo2旋转0007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0007.jpg"; sourceTree = "<group>"; };
+		446B22451EDFF62700F5BFFD /* snail logo2旋转0008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0008.jpg"; sourceTree = "<group>"; };
+		446B22461EDFF62700F5BFFD /* snail logo2旋转0009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0009.jpg"; sourceTree = "<group>"; };
+		446B22471EDFF62700F5BFFD /* snail logo2旋转0010.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0010.jpg"; sourceTree = "<group>"; };
+		446B22481EDFF62700F5BFFD /* snail logo2旋转0011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0011.jpg"; sourceTree = "<group>"; };
+		446B22491EDFF62700F5BFFD /* snail logo2旋转0012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0012.jpg"; sourceTree = "<group>"; };
+		446B224A1EDFF62700F5BFFD /* snail logo2旋转0013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0013.jpg"; sourceTree = "<group>"; };
+		446B224B1EDFF62700F5BFFD /* snail logo2旋转0014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0014.jpg"; sourceTree = "<group>"; };
+		446B224C1EDFF62700F5BFFD /* snail logo2旋转0015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0015.jpg"; sourceTree = "<group>"; };
+		446B224D1EDFF62700F5BFFD /* snail logo2旋转0016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0016.jpg"; sourceTree = "<group>"; };
+		446B224E1EDFF62700F5BFFD /* snail logo2旋转0017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0017.jpg"; sourceTree = "<group>"; };
+		446B224F1EDFF62700F5BFFD /* snail logo2旋转0018.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0018.jpg"; sourceTree = "<group>"; };
+		446B22501EDFF62700F5BFFD /* snail logo2旋转0019.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0019.jpg"; sourceTree = "<group>"; };
+		446B22511EDFF62700F5BFFD /* snail logo2旋转0020.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0020.jpg"; sourceTree = "<group>"; };
+		446B22521EDFF62700F5BFFD /* snail logo2旋转0021.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0021.jpg"; sourceTree = "<group>"; };
+		446B22531EDFF62700F5BFFD /* snail logo2旋转0022.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0022.jpg"; sourceTree = "<group>"; };
+		446B22541EDFF62700F5BFFD /* snail logo2旋转0023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0023.jpg"; sourceTree = "<group>"; };
+		446B22551EDFF62700F5BFFD /* snail logo2旋转0024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0024.jpg"; sourceTree = "<group>"; };
+		446B22561EDFF62700F5BFFD /* snail logo2旋转0025.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0025.jpg"; sourceTree = "<group>"; };
+		446B22571EDFF62700F5BFFD /* snail logo2旋转0026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0026.jpg"; sourceTree = "<group>"; };
+		446B22581EDFF62700F5BFFD /* snail logo2旋转0027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0027.jpg"; sourceTree = "<group>"; };
+		446B22591EDFF62700F5BFFD /* snail logo2旋转0028.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0028.jpg"; sourceTree = "<group>"; };
+		446B225A1EDFF62700F5BFFD /* snail logo2旋转0029.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0029.jpg"; sourceTree = "<group>"; };
+		446B225B1EDFF62700F5BFFD /* snail logo2旋转0030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0030.jpg"; sourceTree = "<group>"; };
+		446B225C1EDFF62700F5BFFD /* snail logo2旋转0031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0031.jpg"; sourceTree = "<group>"; };
+		446B225D1EDFF62700F5BFFD /* snail logo2旋转0032.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0032.jpg"; sourceTree = "<group>"; };
+		446B225E1EDFF62700F5BFFD /* snail logo2旋转0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0033.jpg"; sourceTree = "<group>"; };
+		446B225F1EDFF62700F5BFFD /* snail logo2旋转0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0034.jpg"; sourceTree = "<group>"; };
+		446B22601EDFF62700F5BFFD /* snail logo2旋转0035.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0035.jpg"; sourceTree = "<group>"; };
+		446B22611EDFF62700F5BFFD /* snail logo2旋转0036.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0036.jpg"; sourceTree = "<group>"; };
+		446B22621EDFF62700F5BFFD /* snail logo2旋转0037.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0037.jpg"; sourceTree = "<group>"; };
+		446B22631EDFF62700F5BFFD /* snail logo2旋转0038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0038.jpg"; sourceTree = "<group>"; };
+		446B22641EDFF62700F5BFFD /* snail logo2旋转0039.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0039.jpg"; sourceTree = "<group>"; };
+		446B22651EDFF62700F5BFFD /* snail logo2旋转0040.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0040.jpg"; sourceTree = "<group>"; };
+		446B22661EDFF62700F5BFFD /* snail logo2旋转0041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0041.jpg"; sourceTree = "<group>"; };
+		446B22671EDFF62700F5BFFD /* snail logo2旋转0042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0042.jpg"; sourceTree = "<group>"; };
+		446B22681EDFF62700F5BFFD /* snail logo2旋转0043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0043.jpg"; sourceTree = "<group>"; };
+		446B22691EDFF62700F5BFFD /* snail logo2旋转0044.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0044.jpg"; sourceTree = "<group>"; };
+		446B226A1EDFF62700F5BFFD /* snail logo2旋转0045.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0045.jpg"; sourceTree = "<group>"; };
+		446B226B1EDFF62700F5BFFD /* snail logo2旋转0046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0046.jpg"; sourceTree = "<group>"; };
+		446B226C1EDFF62700F5BFFD /* snail logo2旋转0047.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0047.jpg"; sourceTree = "<group>"; };
+		446B226D1EDFF62700F5BFFD /* snail logo2旋转0048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0048.jpg"; sourceTree = "<group>"; };
+		446B226E1EDFF62700F5BFFD /* snail logo2旋转0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0049.jpg"; sourceTree = "<group>"; };
+		446B226F1EDFF62700F5BFFD /* snail logo2旋转0050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0050.jpg"; sourceTree = "<group>"; };
+		446B22701EDFF62700F5BFFD /* snail logo2旋转0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0051.jpg"; sourceTree = "<group>"; };
+		446B22711EDFF62700F5BFFD /* snail logo2旋转0052.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0052.jpg"; sourceTree = "<group>"; };
+		446B22721EDFF62700F5BFFD /* snail logo2旋转0053.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0053.jpg"; sourceTree = "<group>"; };
+		446B22731EDFF62700F5BFFD /* snail logo2旋转0054.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0054.jpg"; sourceTree = "<group>"; };
+		446B22741EDFF62700F5BFFD /* snail logo2旋转0055.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0055.jpg"; sourceTree = "<group>"; };
+		446B22751EDFF62700F5BFFD /* snail logo2旋转0056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0056.jpg"; sourceTree = "<group>"; };
+		446B22761EDFF62700F5BFFD /* snail logo2旋转0057.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0057.jpg"; sourceTree = "<group>"; };
+		446B22771EDFF62700F5BFFD /* snail logo2旋转0058.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0058.jpg"; sourceTree = "<group>"; };
+		446B22781EDFF62700F5BFFD /* snail logo2旋转0059.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0059.jpg"; sourceTree = "<group>"; };
+		446B22791EDFF62700F5BFFD /* snail logo2旋转0060.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0060.jpg"; sourceTree = "<group>"; };
+		446B227A1EDFF62700F5BFFD /* snail logo2旋转0061.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0061.jpg"; sourceTree = "<group>"; };
+		446B227B1EDFF62700F5BFFD /* snail logo2旋转0062.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0062.jpg"; sourceTree = "<group>"; };
+		446B227C1EDFF62700F5BFFD /* snail logo2旋转0063.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0063.jpg"; sourceTree = "<group>"; };
+		446B227D1EDFF62700F5BFFD /* snail logo2旋转0064.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0064.jpg"; sourceTree = "<group>"; };
+		446B227E1EDFF62700F5BFFD /* snail logo2旋转0065.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0065.jpg"; sourceTree = "<group>"; };
+		446B227F1EDFF62700F5BFFD /* snail logo2旋转0066.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0066.jpg"; sourceTree = "<group>"; };
+		446B22801EDFF62700F5BFFD /* snail logo2旋转0067.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0067.jpg"; sourceTree = "<group>"; };
+		446B22811EDFF62700F5BFFD /* snail logo2旋转0068.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0068.jpg"; sourceTree = "<group>"; };
+		446B22821EDFF62700F5BFFD /* snail logo2旋转0069.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0069.jpg"; sourceTree = "<group>"; };
+		446B22831EDFF62700F5BFFD /* snail logo2旋转0070.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0070.jpg"; sourceTree = "<group>"; };
+		446B22841EDFF62700F5BFFD /* snail logo2旋转0071.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0071.jpg"; sourceTree = "<group>"; };
+		446B22851EDFF62700F5BFFD /* snail logo2旋转0072.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0072.jpg"; sourceTree = "<group>"; };
+		446B22861EDFF62700F5BFFD /* snail logo2旋转0073.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0073.jpg"; sourceTree = "<group>"; };
+		446B22871EDFF62700F5BFFD /* snail logo2旋转0074.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0074.jpg"; sourceTree = "<group>"; };
+		446B22881EDFF62700F5BFFD /* snail logo2旋转0075.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0075.jpg"; sourceTree = "<group>"; };
+		446B22891EDFF62700F5BFFD /* snail logo2旋转0076.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0076.jpg"; sourceTree = "<group>"; };
+		446B228A1EDFF62700F5BFFD /* snail logo2旋转0077.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0077.jpg"; sourceTree = "<group>"; };
+		446B228B1EDFF62700F5BFFD /* snail logo2旋转0078.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0078.jpg"; sourceTree = "<group>"; };
+		446B228C1EDFF62700F5BFFD /* snail logo2旋转0079.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0079.jpg"; sourceTree = "<group>"; };
+		446B228D1EDFF62700F5BFFD /* snail logo2旋转0080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0080.jpg"; sourceTree = "<group>"; };
+		446B228E1EDFF62700F5BFFD /* snail logo2旋转0081.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0081.jpg"; sourceTree = "<group>"; };
+		446B228F1EDFF62700F5BFFD /* snail logo2旋转0082.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0082.jpg"; sourceTree = "<group>"; };
+		446B22901EDFF62700F5BFFD /* snail logo2旋转0083.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0083.jpg"; sourceTree = "<group>"; };
+		446B22911EDFF62700F5BFFD /* snail logo2旋转0084.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0084.jpg"; sourceTree = "<group>"; };
+		446B22921EDFF62700F5BFFD /* snail logo2旋转0085.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0085.jpg"; sourceTree = "<group>"; };
+		446B22931EDFF62700F5BFFD /* snail logo2旋转0086.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0086.jpg"; sourceTree = "<group>"; };
+		446B22941EDFF62700F5BFFD /* snail logo2旋转0087.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0087.jpg"; sourceTree = "<group>"; };
+		446B22951EDFF62700F5BFFD /* snail logo2旋转0088.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0088.jpg"; sourceTree = "<group>"; };
+		446B22961EDFF62700F5BFFD /* snail logo2旋转0089.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0089.jpg"; sourceTree = "<group>"; };
+		446B22971EDFF62700F5BFFD /* snail logo2旋转0090.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0090.jpg"; sourceTree = "<group>"; };
+		446B22981EDFF62700F5BFFD /* snail logo2旋转0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0091.jpg"; sourceTree = "<group>"; };
+		446B22991EDFF62700F5BFFD /* snail logo2旋转0092.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0092.jpg"; sourceTree = "<group>"; };
+		446B229A1EDFF62700F5BFFD /* snail logo2旋转0093.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0093.jpg"; sourceTree = "<group>"; };
+		446B229B1EDFF62700F5BFFD /* snail logo2旋转0094.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0094.jpg"; sourceTree = "<group>"; };
+		446B229C1EDFF62700F5BFFD /* snail logo2旋转0095.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0095.jpg"; sourceTree = "<group>"; };
+		446B229D1EDFF62700F5BFFD /* snail logo2旋转0096.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0096.jpg"; sourceTree = "<group>"; };
+		446B229E1EDFF62700F5BFFD /* snail logo2旋转0097.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0097.jpg"; sourceTree = "<group>"; };
+		446B229F1EDFF62700F5BFFD /* snail logo2旋转0098.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0098.jpg"; sourceTree = "<group>"; };
+		446B22A01EDFF62700F5BFFD /* snail logo2旋转0099.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0099.jpg"; sourceTree = "<group>"; };
+		446B22A11EDFF62700F5BFFD /* snail logo2旋转0100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0100.jpg"; sourceTree = "<group>"; };
+		446B22A21EDFF62700F5BFFD /* snail logo2旋转0101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0101.jpg"; sourceTree = "<group>"; };
+		446B22A31EDFF62700F5BFFD /* snail logo2旋转0102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0102.jpg"; sourceTree = "<group>"; };
+		446B22A41EDFF62700F5BFFD /* snail logo2旋转0103.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0103.jpg"; sourceTree = "<group>"; };
+		446B22A51EDFF62700F5BFFD /* snail logo2旋转0104.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0104.jpg"; sourceTree = "<group>"; };
+		446B22A61EDFF62700F5BFFD /* snail logo2旋转0105.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0105.jpg"; sourceTree = "<group>"; };
+		446B22A71EDFF62700F5BFFD /* snail logo2旋转0106.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0106.jpg"; sourceTree = "<group>"; };
+		446B22A81EDFF62700F5BFFD /* snail logo2旋转0107.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0107.jpg"; sourceTree = "<group>"; };
+		446B22A91EDFF62700F5BFFD /* snail logo2旋转0108.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0108.jpg"; sourceTree = "<group>"; };
+		446B22AA1EDFF62700F5BFFD /* snail logo2旋转0109.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0109.jpg"; sourceTree = "<group>"; };
+		446B22AB1EDFF62700F5BFFD /* snail logo2旋转0110.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0110.jpg"; sourceTree = "<group>"; };
+		446B22AC1EDFF62700F5BFFD /* snail logo2旋转0111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0111.jpg"; sourceTree = "<group>"; };
+		446B22AD1EDFF62700F5BFFD /* snail logo2旋转0112.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0112.jpg"; sourceTree = "<group>"; };
+		446B22AE1EDFF62700F5BFFD /* snail logo2旋转0113.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0113.jpg"; sourceTree = "<group>"; };
+		446B22AF1EDFF62700F5BFFD /* snail logo2旋转0114.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0114.jpg"; sourceTree = "<group>"; };
+		446B22B01EDFF62700F5BFFD /* snail logo2旋转0115.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0115.jpg"; sourceTree = "<group>"; };
+		446B22B11EDFF62700F5BFFD /* snail logo2旋转0116.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0116.jpg"; sourceTree = "<group>"; };
+		446B22B21EDFF62700F5BFFD /* snail logo2旋转0117.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0117.jpg"; sourceTree = "<group>"; };
+		446B22B31EDFF62700F5BFFD /* snail logo2旋转0118.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0118.jpg"; sourceTree = "<group>"; };
+		446B22B41EDFF62700F5BFFD /* snail logo2旋转0119.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0119.jpg"; sourceTree = "<group>"; };
+		446B22B51EDFF62700F5BFFD /* snail logo2旋转0120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0120.jpg"; sourceTree = "<group>"; };
+		446B22B61EDFF62700F5BFFD /* snail logo2旋转0121.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0121.jpg"; sourceTree = "<group>"; };
+		446B22B71EDFF62700F5BFFD /* snail logo2旋转0122.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0122.jpg"; sourceTree = "<group>"; };
+		446B22B81EDFF62700F5BFFD /* snail logo2旋转0123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0123.jpg"; sourceTree = "<group>"; };
+		446B22B91EDFF62700F5BFFD /* snail logo2旋转0124.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0124.jpg"; sourceTree = "<group>"; };
+		446B22BA1EDFF62700F5BFFD /* snail logo2旋转0125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0125.jpg"; sourceTree = "<group>"; };
+		446B22BB1EDFF62700F5BFFD /* snail logo2旋转0126.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0126.jpg"; sourceTree = "<group>"; };
+		446B22BC1EDFF62700F5BFFD /* snail logo2旋转0127.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0127.jpg"; sourceTree = "<group>"; };
+		446B22BD1EDFF62700F5BFFD /* snail logo2旋转0128.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0128.jpg"; sourceTree = "<group>"; };
+		446B22BE1EDFF62700F5BFFD /* snail logo2旋转0129.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0129.jpg"; sourceTree = "<group>"; };
+		446B22BF1EDFF62700F5BFFD /* snail logo2旋转0130.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0130.jpg"; sourceTree = "<group>"; };
+		446B22C01EDFF62700F5BFFD /* snail logo2旋转0131.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0131.jpg"; sourceTree = "<group>"; };
+		446B22C11EDFF62700F5BFFD /* snail logo2旋转0132.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0132.jpg"; sourceTree = "<group>"; };
+		446B22C21EDFF62700F5BFFD /* snail logo2旋转0133.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0133.jpg"; sourceTree = "<group>"; };
+		446B22C31EDFF62700F5BFFD /* snail logo2旋转0134.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0134.jpg"; sourceTree = "<group>"; };
+		446B22C41EDFF62700F5BFFD /* snail logo2旋转0135.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0135.jpg"; sourceTree = "<group>"; };
+		446B22C51EDFF62700F5BFFD /* snail logo2旋转0136.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0136.jpg"; sourceTree = "<group>"; };
+		446B22C61EDFF62700F5BFFD /* snail logo2旋转0137.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0137.jpg"; sourceTree = "<group>"; };
+		446B22C71EDFF62700F5BFFD /* snail logo2旋转0138.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0138.jpg"; sourceTree = "<group>"; };
+		446B22C81EDFF62700F5BFFD /* snail logo2旋转0139.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0139.jpg"; sourceTree = "<group>"; };
+		446B22C91EDFF62700F5BFFD /* snail logo2旋转0140.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0140.jpg"; sourceTree = "<group>"; };
+		446B22CA1EDFF62700F5BFFD /* snail logo2旋转0141.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "snail logo2旋转0141.jpg"; sourceTree = "<group>"; };
+		4484CFF71ED3DD2700662A19 /* LogoAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4484CFFB1ED3DD2700662A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4484CFFD1ED3DD2700662A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4484CFFE1ED3DD2700662A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4484D0001ED3DD2700662A19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4484D0011ED3DD2700662A19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4484D0041ED3DD2700662A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4484D0061ED3DD2700662A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4484D0091ED3DD2700662A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4484D00B1ED3DD2700662A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4484CFF41ED3DD2700662A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446B223C1EDFF62700F5BFFD /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				446B223D1EDFF62700F5BFFD /* click */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		446B223D1EDFF62700F5BFFD /* click */ = {
+			isa = PBXGroup;
+			children = (
+				446B223E1EDFF62700F5BFFD /* snail logo2旋转0001.jpg */,
+				446B223F1EDFF62700F5BFFD /* snail logo2旋转0002.jpg */,
+				446B22401EDFF62700F5BFFD /* snail logo2旋转0003.jpg */,
+				446B22411EDFF62700F5BFFD /* snail logo2旋转0004.jpg */,
+				446B22421EDFF62700F5BFFD /* snail logo2旋转0005.jpg */,
+				446B22431EDFF62700F5BFFD /* snail logo2旋转0006.jpg */,
+				446B22441EDFF62700F5BFFD /* snail logo2旋转0007.jpg */,
+				446B22451EDFF62700F5BFFD /* snail logo2旋转0008.jpg */,
+				446B22461EDFF62700F5BFFD /* snail logo2旋转0009.jpg */,
+				446B22471EDFF62700F5BFFD /* snail logo2旋转0010.jpg */,
+				446B22481EDFF62700F5BFFD /* snail logo2旋转0011.jpg */,
+				446B22491EDFF62700F5BFFD /* snail logo2旋转0012.jpg */,
+				446B224A1EDFF62700F5BFFD /* snail logo2旋转0013.jpg */,
+				446B224B1EDFF62700F5BFFD /* snail logo2旋转0014.jpg */,
+				446B224C1EDFF62700F5BFFD /* snail logo2旋转0015.jpg */,
+				446B224D1EDFF62700F5BFFD /* snail logo2旋转0016.jpg */,
+				446B224E1EDFF62700F5BFFD /* snail logo2旋转0017.jpg */,
+				446B224F1EDFF62700F5BFFD /* snail logo2旋转0018.jpg */,
+				446B22501EDFF62700F5BFFD /* snail logo2旋转0019.jpg */,
+				446B22511EDFF62700F5BFFD /* snail logo2旋转0020.jpg */,
+				446B22521EDFF62700F5BFFD /* snail logo2旋转0021.jpg */,
+				446B22531EDFF62700F5BFFD /* snail logo2旋转0022.jpg */,
+				446B22541EDFF62700F5BFFD /* snail logo2旋转0023.jpg */,
+				446B22551EDFF62700F5BFFD /* snail logo2旋转0024.jpg */,
+				446B22561EDFF62700F5BFFD /* snail logo2旋转0025.jpg */,
+				446B22571EDFF62700F5BFFD /* snail logo2旋转0026.jpg */,
+				446B22581EDFF62700F5BFFD /* snail logo2旋转0027.jpg */,
+				446B22591EDFF62700F5BFFD /* snail logo2旋转0028.jpg */,
+				446B225A1EDFF62700F5BFFD /* snail logo2旋转0029.jpg */,
+				446B225B1EDFF62700F5BFFD /* snail logo2旋转0030.jpg */,
+				446B225C1EDFF62700F5BFFD /* snail logo2旋转0031.jpg */,
+				446B225D1EDFF62700F5BFFD /* snail logo2旋转0032.jpg */,
+				446B225E1EDFF62700F5BFFD /* snail logo2旋转0033.jpg */,
+				446B225F1EDFF62700F5BFFD /* snail logo2旋转0034.jpg */,
+				446B22601EDFF62700F5BFFD /* snail logo2旋转0035.jpg */,
+				446B22611EDFF62700F5BFFD /* snail logo2旋转0036.jpg */,
+				446B22621EDFF62700F5BFFD /* snail logo2旋转0037.jpg */,
+				446B22631EDFF62700F5BFFD /* snail logo2旋转0038.jpg */,
+				446B22641EDFF62700F5BFFD /* snail logo2旋转0039.jpg */,
+				446B22651EDFF62700F5BFFD /* snail logo2旋转0040.jpg */,
+				446B22661EDFF62700F5BFFD /* snail logo2旋转0041.jpg */,
+				446B22671EDFF62700F5BFFD /* snail logo2旋转0042.jpg */,
+				446B22681EDFF62700F5BFFD /* snail logo2旋转0043.jpg */,
+				446B22691EDFF62700F5BFFD /* snail logo2旋转0044.jpg */,
+				446B226A1EDFF62700F5BFFD /* snail logo2旋转0045.jpg */,
+				446B226B1EDFF62700F5BFFD /* snail logo2旋转0046.jpg */,
+				446B226C1EDFF62700F5BFFD /* snail logo2旋转0047.jpg */,
+				446B226D1EDFF62700F5BFFD /* snail logo2旋转0048.jpg */,
+				446B226E1EDFF62700F5BFFD /* snail logo2旋转0049.jpg */,
+				446B226F1EDFF62700F5BFFD /* snail logo2旋转0050.jpg */,
+				446B22701EDFF62700F5BFFD /* snail logo2旋转0051.jpg */,
+				446B22711EDFF62700F5BFFD /* snail logo2旋转0052.jpg */,
+				446B22721EDFF62700F5BFFD /* snail logo2旋转0053.jpg */,
+				446B22731EDFF62700F5BFFD /* snail logo2旋转0054.jpg */,
+				446B22741EDFF62700F5BFFD /* snail logo2旋转0055.jpg */,
+				446B22751EDFF62700F5BFFD /* snail logo2旋转0056.jpg */,
+				446B22761EDFF62700F5BFFD /* snail logo2旋转0057.jpg */,
+				446B22771EDFF62700F5BFFD /* snail logo2旋转0058.jpg */,
+				446B22781EDFF62700F5BFFD /* snail logo2旋转0059.jpg */,
+				446B22791EDFF62700F5BFFD /* snail logo2旋转0060.jpg */,
+				446B227A1EDFF62700F5BFFD /* snail logo2旋转0061.jpg */,
+				446B227B1EDFF62700F5BFFD /* snail logo2旋转0062.jpg */,
+				446B227C1EDFF62700F5BFFD /* snail logo2旋转0063.jpg */,
+				446B227D1EDFF62700F5BFFD /* snail logo2旋转0064.jpg */,
+				446B227E1EDFF62700F5BFFD /* snail logo2旋转0065.jpg */,
+				446B227F1EDFF62700F5BFFD /* snail logo2旋转0066.jpg */,
+				446B22801EDFF62700F5BFFD /* snail logo2旋转0067.jpg */,
+				446B22811EDFF62700F5BFFD /* snail logo2旋转0068.jpg */,
+				446B22821EDFF62700F5BFFD /* snail logo2旋转0069.jpg */,
+				446B22831EDFF62700F5BFFD /* snail logo2旋转0070.jpg */,
+				446B22841EDFF62700F5BFFD /* snail logo2旋转0071.jpg */,
+				446B22851EDFF62700F5BFFD /* snail logo2旋转0072.jpg */,
+				446B22861EDFF62700F5BFFD /* snail logo2旋转0073.jpg */,
+				446B22871EDFF62700F5BFFD /* snail logo2旋转0074.jpg */,
+				446B22881EDFF62700F5BFFD /* snail logo2旋转0075.jpg */,
+				446B22891EDFF62700F5BFFD /* snail logo2旋转0076.jpg */,
+				446B228A1EDFF62700F5BFFD /* snail logo2旋转0077.jpg */,
+				446B228B1EDFF62700F5BFFD /* snail logo2旋转0078.jpg */,
+				446B228C1EDFF62700F5BFFD /* snail logo2旋转0079.jpg */,
+				446B228D1EDFF62700F5BFFD /* snail logo2旋转0080.jpg */,
+				446B228E1EDFF62700F5BFFD /* snail logo2旋转0081.jpg */,
+				446B228F1EDFF62700F5BFFD /* snail logo2旋转0082.jpg */,
+				446B22901EDFF62700F5BFFD /* snail logo2旋转0083.jpg */,
+				446B22911EDFF62700F5BFFD /* snail logo2旋转0084.jpg */,
+				446B22921EDFF62700F5BFFD /* snail logo2旋转0085.jpg */,
+				446B22931EDFF62700F5BFFD /* snail logo2旋转0086.jpg */,
+				446B22941EDFF62700F5BFFD /* snail logo2旋转0087.jpg */,
+				446B22951EDFF62700F5BFFD /* snail logo2旋转0088.jpg */,
+				446B22961EDFF62700F5BFFD /* snail logo2旋转0089.jpg */,
+				446B22971EDFF62700F5BFFD /* snail logo2旋转0090.jpg */,
+				446B22981EDFF62700F5BFFD /* snail logo2旋转0091.jpg */,
+				446B22991EDFF62700F5BFFD /* snail logo2旋转0092.jpg */,
+				446B229A1EDFF62700F5BFFD /* snail logo2旋转0093.jpg */,
+				446B229B1EDFF62700F5BFFD /* snail logo2旋转0094.jpg */,
+				446B229C1EDFF62700F5BFFD /* snail logo2旋转0095.jpg */,
+				446B229D1EDFF62700F5BFFD /* snail logo2旋转0096.jpg */,
+				446B229E1EDFF62700F5BFFD /* snail logo2旋转0097.jpg */,
+				446B229F1EDFF62700F5BFFD /* snail logo2旋转0098.jpg */,
+				446B22A01EDFF62700F5BFFD /* snail logo2旋转0099.jpg */,
+				446B22A11EDFF62700F5BFFD /* snail logo2旋转0100.jpg */,
+				446B22A21EDFF62700F5BFFD /* snail logo2旋转0101.jpg */,
+				446B22A31EDFF62700F5BFFD /* snail logo2旋转0102.jpg */,
+				446B22A41EDFF62700F5BFFD /* snail logo2旋转0103.jpg */,
+				446B22A51EDFF62700F5BFFD /* snail logo2旋转0104.jpg */,
+				446B22A61EDFF62700F5BFFD /* snail logo2旋转0105.jpg */,
+				446B22A71EDFF62700F5BFFD /* snail logo2旋转0106.jpg */,
+				446B22A81EDFF62700F5BFFD /* snail logo2旋转0107.jpg */,
+				446B22A91EDFF62700F5BFFD /* snail logo2旋转0108.jpg */,
+				446B22AA1EDFF62700F5BFFD /* snail logo2旋转0109.jpg */,
+				446B22AB1EDFF62700F5BFFD /* snail logo2旋转0110.jpg */,
+				446B22AC1EDFF62700F5BFFD /* snail logo2旋转0111.jpg */,
+				446B22AD1EDFF62700F5BFFD /* snail logo2旋转0112.jpg */,
+				446B22AE1EDFF62700F5BFFD /* snail logo2旋转0113.jpg */,
+				446B22AF1EDFF62700F5BFFD /* snail logo2旋转0114.jpg */,
+				446B22B01EDFF62700F5BFFD /* snail logo2旋转0115.jpg */,
+				446B22B11EDFF62700F5BFFD /* snail logo2旋转0116.jpg */,
+				446B22B21EDFF62700F5BFFD /* snail logo2旋转0117.jpg */,
+				446B22B31EDFF62700F5BFFD /* snail logo2旋转0118.jpg */,
+				446B22B41EDFF62700F5BFFD /* snail logo2旋转0119.jpg */,
+				446B22B51EDFF62700F5BFFD /* snail logo2旋转0120.jpg */,
+				446B22B61EDFF62700F5BFFD /* snail logo2旋转0121.jpg */,
+				446B22B71EDFF62700F5BFFD /* snail logo2旋转0122.jpg */,
+				446B22B81EDFF62700F5BFFD /* snail logo2旋转0123.jpg */,
+				446B22B91EDFF62700F5BFFD /* snail logo2旋转0124.jpg */,
+				446B22BA1EDFF62700F5BFFD /* snail logo2旋转0125.jpg */,
+				446B22BB1EDFF62700F5BFFD /* snail logo2旋转0126.jpg */,
+				446B22BC1EDFF62700F5BFFD /* snail logo2旋转0127.jpg */,
+				446B22BD1EDFF62700F5BFFD /* snail logo2旋转0128.jpg */,
+				446B22BE1EDFF62700F5BFFD /* snail logo2旋转0129.jpg */,
+				446B22BF1EDFF62700F5BFFD /* snail logo2旋转0130.jpg */,
+				446B22C01EDFF62700F5BFFD /* snail logo2旋转0131.jpg */,
+				446B22C11EDFF62700F5BFFD /* snail logo2旋转0132.jpg */,
+				446B22C21EDFF62700F5BFFD /* snail logo2旋转0133.jpg */,
+				446B22C31EDFF62700F5BFFD /* snail logo2旋转0134.jpg */,
+				446B22C41EDFF62700F5BFFD /* snail logo2旋转0135.jpg */,
+				446B22C51EDFF62700F5BFFD /* snail logo2旋转0136.jpg */,
+				446B22C61EDFF62700F5BFFD /* snail logo2旋转0137.jpg */,
+				446B22C71EDFF62700F5BFFD /* snail logo2旋转0138.jpg */,
+				446B22C81EDFF62700F5BFFD /* snail logo2旋转0139.jpg */,
+				446B22C91EDFF62700F5BFFD /* snail logo2旋转0140.jpg */,
+				446B22CA1EDFF62700F5BFFD /* snail logo2旋转0141.jpg */,
+			);
+			path = click;
+			sourceTree = "<group>";
+		};
+		4484CFEE1ED3DD2700662A19 = {
+			isa = PBXGroup;
+			children = (
+				444993431EEE78240018DE1D /* UIImageViewAnimator.h */,
+				444993441EEE78240018DE1D /* UIImageViewAnimator.m */,
+				4484CFF91ED3DD2700662A19 /* LogoAnimationDemo */,
+				4484CFF81ED3DD2700662A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4484CFF81ED3DD2700662A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4484CFF71ED3DD2700662A19 /* LogoAnimationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4484CFF91ED3DD2700662A19 /* LogoAnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				446B223C1EDFF62700F5BFFD /* resource */,
+				4484CFFD1ED3DD2700662A19 /* AppDelegate.h */,
+				4484CFFE1ED3DD2700662A19 /* AppDelegate.m */,
+				4484D0001ED3DD2700662A19 /* ViewController.h */,
+				4484D0011ED3DD2700662A19 /* ViewController.m */,
+				4484D0031ED3DD2700662A19 /* Main.storyboard */,
+				4484D0061ED3DD2700662A19 /* Assets.xcassets */,
+				4484D0081ED3DD2700662A19 /* LaunchScreen.storyboard */,
+				4484D00B1ED3DD2700662A19 /* Info.plist */,
+				4484CFFA1ED3DD2700662A19 /* Supporting Files */,
+			);
+			path = LogoAnimationDemo;
+			sourceTree = "<group>";
+		};
+		4484CFFA1ED3DD2700662A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				444993461EEE97530018DE1D /* test1.png */,
+				444993471EEE97530018DE1D /* test2.png */,
+				444993481EEE97530018DE1D /* test3.png */,
+				4484CFFB1ED3DD2700662A19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4484CFF61ED3DD2700662A19 /* LogoAnimationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4484D00E1ED3DD2700662A19 /* Build configuration list for PBXNativeTarget "LogoAnimationDemo" */;
+			buildPhases = (
+				4484CFF31ED3DD2700662A19 /* Sources */,
+				4484CFF41ED3DD2700662A19 /* Frameworks */,
+				4484CFF51ED3DD2700662A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogoAnimationDemo;
+			productName = LogoAnimationDemo;
+			productReference = 4484CFF71ED3DD2700662A19 /* LogoAnimationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4484CFEF1ED3DD2700662A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = com.snailgames;
+				TargetAttributes = {
+					4484CFF61ED3DD2700662A19 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WSSN499SLU;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 4484CFF21ED3DD2700662A19 /* Build configuration list for PBXProject "LogoAnimationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4484CFEE1ED3DD2700662A19;
+			productRefGroup = 4484CFF81ED3DD2700662A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4484CFF61ED3DD2700662A19 /* LogoAnimationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4484CFF51ED3DD2700662A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446B23181EDFF62700F5BFFD /* snail logo2旋转0078.jpg in Resources */,
+				446B22F91EDFF62700F5BFFD /* snail logo2旋转0047.jpg in Resources */,
+				446B23151EDFF62700F5BFFD /* snail logo2旋转0075.jpg in Resources */,
+				446B22FC1EDFF62700F5BFFD /* snail logo2旋转0050.jpg in Resources */,
+				446B23091EDFF62700F5BFFD /* snail logo2旋转0063.jpg in Resources */,
+				446B23571EDFF62700F5BFFD /* snail logo2旋转0141.jpg in Resources */,
+				446B23191EDFF62700F5BFFD /* snail logo2旋转0079.jpg in Resources */,
+				446B23241EDFF62700F5BFFD /* snail logo2旋转0090.jpg in Resources */,
+				444993491EEE97530018DE1D /* test1.png in Resources */,
+				446B22FA1EDFF62700F5BFFD /* snail logo2旋转0048.jpg in Resources */,
+				446B22EE1EDFF62700F5BFFD /* snail logo2旋转0036.jpg in Resources */,
+				446B23131EDFF62700F5BFFD /* snail logo2旋转0073.jpg in Resources */,
+				446B234F1EDFF62700F5BFFD /* snail logo2旋转0133.jpg in Resources */,
+				446B22CD1EDFF62700F5BFFD /* snail logo2旋转0003.jpg in Resources */,
+				4484D00A1ED3DD2700662A19 /* LaunchScreen.storyboard in Resources */,
+				446B22D21EDFF62700F5BFFD /* snail logo2旋转0008.jpg in Resources */,
+				446B23021EDFF62700F5BFFD /* snail logo2旋转0056.jpg in Resources */,
+				446B232F1EDFF62700F5BFFD /* snail logo2旋转0101.jpg in Resources */,
+				446B23411EDFF62700F5BFFD /* snail logo2旋转0119.jpg in Resources */,
+				446B22CB1EDFF62700F5BFFD /* snail logo2旋转0001.jpg in Resources */,
+				446B22E91EDFF62700F5BFFD /* snail logo2旋转0031.jpg in Resources */,
+				446B230F1EDFF62700F5BFFD /* snail logo2旋转0069.jpg in Resources */,
+				446B23371EDFF62700F5BFFD /* snail logo2旋转0109.jpg in Resources */,
+				446B22D71EDFF62700F5BFFD /* snail logo2旋转0013.jpg in Resources */,
+				446B23011EDFF62700F5BFFD /* snail logo2旋转0055.jpg in Resources */,
+				446B22F31EDFF62700F5BFFD /* snail logo2旋转0041.jpg in Resources */,
+				446B22DC1EDFF62700F5BFFD /* snail logo2旋转0018.jpg in Resources */,
+				446B234C1EDFF62700F5BFFD /* snail logo2旋转0130.jpg in Resources */,
+				446B233C1EDFF62700F5BFFD /* snail logo2旋转0114.jpg in Resources */,
+				446B230B1EDFF62700F5BFFD /* snail logo2旋转0065.jpg in Resources */,
+				446B23451EDFF62700F5BFFD /* snail logo2旋转0123.jpg in Resources */,
+				446B23511EDFF62700F5BFFD /* snail logo2旋转0135.jpg in Resources */,
+				446B231B1EDFF62700F5BFFD /* snail logo2旋转0081.jpg in Resources */,
+				446B23311EDFF62700F5BFFD /* snail logo2旋转0103.jpg in Resources */,
+				4449934A1EEE97530018DE1D /* test2.png in Resources */,
+				446B23031EDFF62700F5BFFD /* snail logo2旋转0057.jpg in Resources */,
+				446B23551EDFF62700F5BFFD /* snail logo2旋转0139.jpg in Resources */,
+				446B230A1EDFF62700F5BFFD /* snail logo2旋转0064.jpg in Resources */,
+				4484D0071ED3DD2700662A19 /* Assets.xcassets in Resources */,
+				446B23161EDFF62700F5BFFD /* snail logo2旋转0076.jpg in Resources */,
+				446B22D01EDFF62700F5BFFD /* snail logo2旋转0006.jpg in Resources */,
+				446B23341EDFF62700F5BFFD /* snail logo2旋转0106.jpg in Resources */,
+				446B22DA1EDFF62700F5BFFD /* snail logo2旋转0016.jpg in Resources */,
+				446B22EA1EDFF62700F5BFFD /* snail logo2旋转0032.jpg in Resources */,
+				446B23071EDFF62700F5BFFD /* snail logo2旋转0061.jpg in Resources */,
+				446B22F81EDFF62700F5BFFD /* snail logo2旋转0046.jpg in Resources */,
+				446B23441EDFF62700F5BFFD /* snail logo2旋转0122.jpg in Resources */,
+				446B234A1EDFF62700F5BFFD /* snail logo2旋转0128.jpg in Resources */,
+				446B22D51EDFF62700F5BFFD /* snail logo2旋转0011.jpg in Resources */,
+				446B22CE1EDFF62700F5BFFD /* snail logo2旋转0004.jpg in Resources */,
+				446B232B1EDFF62700F5BFFD /* snail logo2旋转0097.jpg in Resources */,
+				446B22F71EDFF62700F5BFFD /* snail logo2旋转0045.jpg in Resources */,
+				446B23561EDFF62700F5BFFD /* snail logo2旋转0140.jpg in Resources */,
+				446B23471EDFF62700F5BFFD /* snail logo2旋转0125.jpg in Resources */,
+				446B22E21EDFF62700F5BFFD /* snail logo2旋转0024.jpg in Resources */,
+				446B22CF1EDFF62700F5BFFD /* snail logo2旋转0005.jpg in Resources */,
+				446B23141EDFF62700F5BFFD /* snail logo2旋转0074.jpg in Resources */,
+				446B23231EDFF62700F5BFFD /* snail logo2旋转0089.jpg in Resources */,
+				446B23221EDFF62700F5BFFD /* snail logo2旋转0088.jpg in Resources */,
+				446B22D91EDFF62700F5BFFD /* snail logo2旋转0015.jpg in Resources */,
+				446B23481EDFF62700F5BFFD /* snail logo2旋转0126.jpg in Resources */,
+				446B22E01EDFF62700F5BFFD /* snail logo2旋转0022.jpg in Resources */,
+				446B232A1EDFF62700F5BFFD /* snail logo2旋转0096.jpg in Resources */,
+				446B22DF1EDFF62700F5BFFD /* snail logo2旋转0021.jpg in Resources */,
+				446B23001EDFF62700F5BFFD /* snail logo2旋转0054.jpg in Resources */,
+				446B231A1EDFF62700F5BFFD /* snail logo2旋转0080.jpg in Resources */,
+				446B233A1EDFF62700F5BFFD /* snail logo2旋转0112.jpg in Resources */,
+				446B22DB1EDFF62700F5BFFD /* snail logo2旋转0017.jpg in Resources */,
+				446B22FF1EDFF62700F5BFFD /* snail logo2旋转0053.jpg in Resources */,
+				446B22FD1EDFF62700F5BFFD /* snail logo2旋转0051.jpg in Resources */,
+				446B22EC1EDFF62700F5BFFD /* snail logo2旋转0034.jpg in Resources */,
+				446B23171EDFF62700F5BFFD /* snail logo2旋转0077.jpg in Resources */,
+				446B22F01EDFF62700F5BFFD /* snail logo2旋转0038.jpg in Resources */,
+				446B23051EDFF62700F5BFFD /* snail logo2旋转0059.jpg in Resources */,
+				446B23361EDFF62700F5BFFD /* snail logo2旋转0108.jpg in Resources */,
+				446B23201EDFF62700F5BFFD /* snail logo2旋转0086.jpg in Resources */,
+				446B23111EDFF62700F5BFFD /* snail logo2旋转0071.jpg in Resources */,
+				446B23461EDFF62700F5BFFD /* snail logo2旋转0124.jpg in Resources */,
+				446B23101EDFF62700F5BFFD /* snail logo2旋转0070.jpg in Resources */,
+				446B22F61EDFF62700F5BFFD /* snail logo2旋转0044.jpg in Resources */,
+				446B23391EDFF62700F5BFFD /* snail logo2旋转0111.jpg in Resources */,
+				446B23541EDFF62700F5BFFD /* snail logo2旋转0138.jpg in Resources */,
+				446B23301EDFF62700F5BFFD /* snail logo2旋转0102.jpg in Resources */,
+				446B22ED1EDFF62700F5BFFD /* snail logo2旋转0035.jpg in Resources */,
+				446B22D11EDFF62700F5BFFD /* snail logo2旋转0007.jpg in Resources */,
+				446B22E11EDFF62700F5BFFD /* snail logo2旋转0023.jpg in Resources */,
+				446B22DE1EDFF62700F5BFFD /* snail logo2旋转0020.jpg in Resources */,
+				446B22E81EDFF62700F5BFFD /* snail logo2旋转0030.jpg in Resources */,
+				446B23381EDFF62700F5BFFD /* snail logo2旋转0110.jpg in Resources */,
+				446B23041EDFF62700F5BFFD /* snail logo2旋转0058.jpg in Resources */,
+				4484D0051ED3DD2700662A19 /* Main.storyboard in Resources */,
+				446B22F11EDFF62700F5BFFD /* snail logo2旋转0039.jpg in Resources */,
+				446B22FE1EDFF62700F5BFFD /* snail logo2旋转0052.jpg in Resources */,
+				446B230D1EDFF62700F5BFFD /* snail logo2旋转0067.jpg in Resources */,
+				446B22D81EDFF62700F5BFFD /* snail logo2旋转0014.jpg in Resources */,
+				446B232E1EDFF62700F5BFFD /* snail logo2旋转0100.jpg in Resources */,
+				446B22E41EDFF62700F5BFFD /* snail logo2旋转0026.jpg in Resources */,
+				446B23331EDFF62700F5BFFD /* snail logo2旋转0105.jpg in Resources */,
+				446B233B1EDFF62700F5BFFD /* snail logo2旋转0113.jpg in Resources */,
+				446B23421EDFF62700F5BFFD /* snail logo2旋转0120.jpg in Resources */,
+				446B23491EDFF62700F5BFFD /* snail logo2旋转0127.jpg in Resources */,
+				446B23351EDFF62700F5BFFD /* snail logo2旋转0107.jpg in Resources */,
+				446B22D41EDFF62700F5BFFD /* snail logo2旋转0010.jpg in Resources */,
+				446B230E1EDFF62700F5BFFD /* snail logo2旋转0068.jpg in Resources */,
+				4449934B1EEE97530018DE1D /* test3.png in Resources */,
+				446B22CC1EDFF62700F5BFFD /* snail logo2旋转0002.jpg in Resources */,
+				446B23401EDFF62700F5BFFD /* snail logo2旋转0118.jpg in Resources */,
+				446B232C1EDFF62700F5BFFD /* snail logo2旋转0098.jpg in Resources */,
+				446B234B1EDFF62700F5BFFD /* snail logo2旋转0129.jpg in Resources */,
+				446B22E71EDFF62700F5BFFD /* snail logo2旋转0029.jpg in Resources */,
+				446B230C1EDFF62700F5BFFD /* snail logo2旋转0066.jpg in Resources */,
+				446B23121EDFF62700F5BFFD /* snail logo2旋转0072.jpg in Resources */,
+				446B23261EDFF62700F5BFFD /* snail logo2旋转0092.jpg in Resources */,
+				446B23211EDFF62700F5BFFD /* snail logo2旋转0087.jpg in Resources */,
+				446B23431EDFF62700F5BFFD /* snail logo2旋转0121.jpg in Resources */,
+				446B23281EDFF62700F5BFFD /* snail logo2旋转0094.jpg in Resources */,
+				446B231C1EDFF62700F5BFFD /* snail logo2旋转0082.jpg in Resources */,
+				446B23061EDFF62700F5BFFD /* snail logo2旋转0060.jpg in Resources */,
+				446B22D31EDFF62700F5BFFD /* snail logo2旋转0009.jpg in Resources */,
+				446B22E31EDFF62700F5BFFD /* snail logo2旋转0025.jpg in Resources */,
+				446B23271EDFF62700F5BFFD /* snail logo2旋转0093.jpg in Resources */,
+				446B23521EDFF62700F5BFFD /* snail logo2旋转0136.jpg in Resources */,
+				446B233D1EDFF62700F5BFFD /* snail logo2旋转0115.jpg in Resources */,
+				446B234D1EDFF62700F5BFFD /* snail logo2旋转0131.jpg in Resources */,
+				446B22EF1EDFF62700F5BFFD /* snail logo2旋转0037.jpg in Resources */,
+				446B22D61EDFF62700F5BFFD /* snail logo2旋转0012.jpg in Resources */,
+				446B22E51EDFF62700F5BFFD /* snail logo2旋转0027.jpg in Resources */,
+				446B23081EDFF62700F5BFFD /* snail logo2旋转0062.jpg in Resources */,
+				446B233F1EDFF62700F5BFFD /* snail logo2旋转0117.jpg in Resources */,
+				446B231D1EDFF62700F5BFFD /* snail logo2旋转0083.jpg in Resources */,
+				446B231E1EDFF62700F5BFFD /* snail logo2旋转0084.jpg in Resources */,
+				446B22F41EDFF62700F5BFFD /* snail logo2旋转0042.jpg in Resources */,
+				446B23291EDFF62700F5BFFD /* snail logo2旋转0095.jpg in Resources */,
+				446B234E1EDFF62700F5BFFD /* snail logo2旋转0132.jpg in Resources */,
+				446B23321EDFF62700F5BFFD /* snail logo2旋转0104.jpg in Resources */,
+				446B232D1EDFF62700F5BFFD /* snail logo2旋转0099.jpg in Resources */,
+				446B22F21EDFF62700F5BFFD /* snail logo2旋转0040.jpg in Resources */,
+				446B22F51EDFF62700F5BFFD /* snail logo2旋转0043.jpg in Resources */,
+				446B22FB1EDFF62700F5BFFD /* snail logo2旋转0049.jpg in Resources */,
+				446B23501EDFF62700F5BFFD /* snail logo2旋转0134.jpg in Resources */,
+				446B231F1EDFF62700F5BFFD /* snail logo2旋转0085.jpg in Resources */,
+				446B233E1EDFF62700F5BFFD /* snail logo2旋转0116.jpg in Resources */,
+				446B22EB1EDFF62700F5BFFD /* snail logo2旋转0033.jpg in Resources */,
+				446B22DD1EDFF62700F5BFFD /* snail logo2旋转0019.jpg in Resources */,
+				446B22E61EDFF62700F5BFFD /* snail logo2旋转0028.jpg in Resources */,
+				446B23531EDFF62700F5BFFD /* snail logo2旋转0137.jpg in Resources */,
+				446B23251EDFF62700F5BFFD /* snail logo2旋转0091.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4484CFF31ED3DD2700662A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4484D0021ED3DD2700662A19 /* ViewController.m in Sources */,
+				4484CFFF1ED3DD2700662A19 /* AppDelegate.m in Sources */,
+				4484CFFC1ED3DD2700662A19 /* main.m in Sources */,
+				444993451EEE78240018DE1D /* UIImageViewAnimator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4484D0031ED3DD2700662A19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4484D0041ED3DD2700662A19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4484D0081ED3DD2700662A19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4484D0091ED3DD2700662A19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4484D00C1ED3DD2700662A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4484D00D1ED3DD2700662A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4484D00F1ED3DD2700662A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = WSSN499SLU;
+				INFOPLIST_FILE = LogoAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames.LogoAnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e56b5b0-832e-4fb0-b270-5dd392ace545";
+				PROVISIONING_PROFILE_SPECIFIER = UniversalSnailDev;
+			};
+			name = Debug;
+		};
+		4484D0101ED3DD2700662A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = WSSN499SLU;
+				INFOPLIST_FILE = LogoAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailgames.LogoAnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e56b5b0-832e-4fb0-b270-5dd392ace545";
+				PROVISIONING_PROFILE_SPECIFIER = UniversalSnailDev;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4484CFF21ED3DD2700662A19 /* Build configuration list for PBXProject "LogoAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4484D00C1ED3DD2700662A19 /* Debug */,
+				4484D00D1ED3DD2700662A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4484D00E1ED3DD2700662A19 /* Build configuration list for PBXNativeTarget "LogoAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4484D00F1ED3DD2700662A19 /* Debug */,
+				4484D0101ED3DD2700662A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4484CFEF1ED3DD2700662A19 /* Project object */;
+}

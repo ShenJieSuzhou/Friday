@@ -1,0 +1,77 @@
+#!/bin/sh   
+
+g_build_list=$1
+dsym_path=$2
+
+dec2hex(){
+     printf "%x" $1
+ }
+
+#构建
+build()
+{
+
+echo "Current TXT is :$g_build_list"
+
+TargetLine=12
+Maxmun=6
+lineNo=0
+index=0
+dump_arrays=(value1 ... valuen)
+for line in $(cat $g_build_list)    				#  	//读取所有渠道号data.dat文件   	 
+do
+
+ let "lineNo+=1"
+
+if [ $lineNo -gt $TargetLine ] ;then
+    #保存采集到的信息
+	dump_arrays[index]=$line
+	let "index+=1"
+    fi
+
+done
+#获取数组长度
+length=${#dump_arrays[@]}
+
+# echo $length
+
+TargetName="appstore"
+
+for (( i = 0; i < $length; i=i+6 )); do
+	#statements
+    #获取app名称
+	let "j=i+1"
+	appname=${dump_arrays[$j]}
+    #获取便宜地址
+	let "j=i+2"
+	addr=${dump_arrays[$j]}
+    #获取偏移量
+	let "j=i+5"
+	# offset=${dump_arrays[$j]%??} | sed 's/\"//g' 
+	offset=${dump_arrays[$j]%??}
+
+    # echo "appname = $appname   ;addr=$addr   ;offset=$offset"
+
+    if [[ "$appname" == "$TargetName" ]]; then
+    	#statements
+    	# echo $(($addr))
+    	# 获得偏移地址
+    	offsetAddr=$(($addr))
+    	#计算基地址
+    	let value=$offsetAddr-$offset
+    	#基地址十进制转十六进制
+    	baseAddr=$(dec2hex $value)
+
+    	 # echo "基地址: $baseAddr" 
+    	 # echo "偏移地址: $(dec2hex $offsetAddr)"
+    	 # echo "dsym路径: "$dsym_path""
+        #解析崩溃信息
+    	 atos -arch arm64 -o "$dsym_path" -l "$baseAddr" "$(dec2hex $offsetAddr)"
+    fi
+done
+}
+
+
+build
+
+

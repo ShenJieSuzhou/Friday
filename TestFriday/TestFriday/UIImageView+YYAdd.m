@@ -7,8 +7,6 @@
 //
 
 #import "UIImageView+YYAdd.h"
-#import <SDWebImage/SDWebImageDownloader.h>
-#import <SDWebImage/SDWebImageManager.h>
 
 @implementation UIImageView (YYAdd)
 
@@ -21,19 +19,7 @@
         self.image = nil;
         return;
     }
-    
-    
-    
-    
-    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:imageURL options:SDWebImageDownloaderProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-        process(receivedSize, expectedSize);
-    } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-        completion(image, data, error, finished);
-    }];
-    
-    
-//    [[SDWebImageManager sharedManager] ]
-    
+
     
 }
 

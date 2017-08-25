@@ -9,9 +9,10 @@
 #import "YYWebImageExample.h"
 #import "YYKit.h"
 #import <QuartzCore/QuartzCore.h>
-#import <SDWebImage/UIImageView+WebCache.h>
-//#import <SDWebImage/FLAnimatedImageView.h>
-#import <SDWebImage/FLAnimatedImageView+WebCache.h>
+
+
+//#import <SDWebImage/UIImageView+WebCache.h>
+//#import <SDWebImage/FLAnimatedImageView+WebCache.h>
 
 
 #define kCellHeight ceil((kScreenWidth) * 3.0 / 4.0)
@@ -40,13 +41,13 @@
 @property (nonatomic, strong) UIActivityIndicatorView *indicator;
 @property (nonatomic, strong) CAShapeLayer *progressLayer;
 @property (nonatomic, strong) UILabel *label;
-@property (nonatomic, strong) FLAnimatedImageView *webImageView;
+//@property (nonatomic, strong) FLAnimatedImageView *webImageView;
+@property (nonatomic, strong) UIImageView *webImageView;
 @property (nonatomic, strong) dispatch_semaphore_t lock;
 
 @end
 
 @implementation YYWebImageExampleCell
-
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -55,7 +56,9 @@
     self.size = CGSizeMake(kScreenWidth, kCellHeight);
     self.contentView.size = self.size;
     
-    _webImageView = [FLAnimatedImageView new];
+//    _webImageView = [FLAnimatedImageView new];
+    
+    _webImageView = [UIImageView new];
     _webImageView.size = self.size;
     _webImageView.clipsToBounds = YES;
     _webImageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -86,10 +89,6 @@
     _progressLayer.strokeEnd = 0;
     [_webImageView.layer addSublayer:_progressLayer];
     
-    
-//    __weak typeof(self) _self = self;
-//    UITapGestureRecognizer *g = [[UITapGestureRecognizer alloc] initwith]
-    
     return self;
 }
 
@@ -102,62 +101,36 @@
     self.progressLayer.strokeEnd = 0;
     [CATransaction commit];
     
-//    if(_webImageView.image){
-//        return;
-//    }
-    
-//    [_webImageView setImageWithURL:url
-//                          progress:^(NSInteger receivedSize, NSInteger expectedSize){
-//                              NSLog(@"receivedSize:%ld  expectedSize:%ld", (long)receivedSize, (long)expectedSize);
-//                              dispatch_async(dispatch_get_main_queue(), ^{
-//                                  if(receivedSize > 0 && receivedSize > 0){
-//                                      CGFloat progress = (CGFloat)receivedSize / expectedSize;
-//                                      progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
-//                                      if(_progressLayer.hidden) _progressLayer.hidden = NO;
-//                                      _progressLayer.strokeEnd = progress;
-//                                  }
-//                              });
-//                              
-//                          } completion:^(UIImage *image, NSData *data, NSError *error, BOOL finished){
-//                              dispatch_async(dispatch_get_main_queue(), ^{
-//                                  if(image){
-//                                      CATransition *transition = [CATransition animation];
-//                                      transition.duration = 0.2;
-//                                      transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//                                      transition.type = kCATransitionFade;
-//                                      [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
-//                                      
-//                                      [_webImageView setImage:image];
-//                                  }
-//                                  
-//                                  if(finished){
-//                                      _progressLayer.hidden = YES;
-//                                  }
-//                              });
-//                          }];
-    
-    
-    [_webImageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if(receivedSize > 0 && receivedSize > 0){
-                CGFloat progress = (CGFloat)receivedSize / expectedSize;
-                progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
-                if(_progressLayer.hidden) _progressLayer.hidden = NO;
-                _progressLayer.strokeEnd = progress;
-            }
-        });
-    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if(image){
-                _progressLayer.hidden = YES;
-                CATransition *transition = [CATransition animation];
-                transition.duration = 0.2;
-                transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-                transition.type = kCATransitionFade;
-                [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
-            }
-        });
-    }];
+//    [_webImageView sd_setImageWithURL:url placeholderImage:nil
+//                              options:SDWebImageProgressiveDownload
+//                             progress:^(NSInteger receivedSize,
+//                                        NSInteger expectedSize,
+//                                        NSURL * _Nullable targetURL) {
+//                                 
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if(receivedSize > 0 && receivedSize > 0){
+//                CGFloat progress = (CGFloat)receivedSize / expectedSize;
+//                progress = progress < 0 ? 0 : progress > 1 ? 1 : progress;
+//                if(_progressLayer.hidden) _progressLayer.hidden = NO;
+//                _progressLayer.strokeEnd = progress;
+//            }
+//        });
+//    } completed:^(UIImage * _Nullable image,
+//                  NSError * _Nullable error,
+//                  SDImageCacheType cacheType,
+//                  NSURL * _Nullable imageURL) {
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if(image){
+//                _progressLayer.hidden = YES;
+//                CATransition *transition = [CATransition animation];
+//                transition.duration = 0.2;
+//                transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//                transition.type = kCATransitionFade;
+//                [self.layer addAnimation:transition forKey:@"YYWebImageFade"];
+//            }
+//        });
+//    }];
 }
 
 @end
@@ -166,7 +139,6 @@
     NSArray *_imageLinks;
 }
 
-//@synthesize imageLinks = _imageLinks;
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -179,42 +151,19 @@
     self.view.backgroundColor = [UIColor colorWithWhite:0.217 alpha:1.000];
     
     NSArray *links = @[
-                       // progressive jpeg
-                       @"https://s-media-cache-ak0.pinimg.com/1200x/2e/0c/c5/2e0cc5d86e7b7cd42af225c29f21c37f.jpg",
-                       
-                       // animated gif: http://cinemagraphs.com/
-                       @"http://i.imgur.com/uoBwCLj.gif",
-                       @"http://i.imgur.com/8KHKhxI.gif",
-                       @"http://i.imgur.com/WXJaqof.gif",
-                       
-                       // animated gif: https://dribbble.com/markpear
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1780193/dots18.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1809343/dots17.1.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1845612/dots22.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1820014/big-hero-6.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1819006/dots11.0.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/345826/screenshots/1799885/dots21.gif",
-                       
-                       // animaged gif: https://dribbble.com/jonadinges
-                       @"https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/2025999/batman-beyond-the-rain.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/1855350/r_nin.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/1963497/way-back-home.gif",
-                       @"https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/1913272/depressed-slurp-cycle.gif",
-                       
-                       // jpg: https://dribbble.com/snootyfox
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/2047158/beerhenge.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/2016158/avalanche.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1839353/pilsner.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1833469/porter.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1521183/farmers.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1391053/tents.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1399501/imperial_beer.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1488711/fishin.jpg",
-                       @"https://d13yacurqjgara.cloudfront.net/users/26059/screenshots/1466318/getaway.jpg",
-                       
-                       // animated webp and apng: http://littlesvr.ca/apng/gif_apng_webp.html
-                       @"http://littlesvr.ca/apng/images/BladeRunner.png",
-                       @"http://littlesvr.ca/apng/images/Contact.webp",
+                       @"https://pic4.zhimg.com/ea159ce6e135c546a9b730f376f362a3_b.jpeg",
+                       @"https://pic3.zhimg.com/624cb86cd37c1d70a7a7b555c0bc34ee_b.png",
+                       @"https://pic3.zhimg.com/c1bd46673d9aa0aa4cf53ac59705e52e_b.jpeg",
+                       @"https://pic1.zhimg.com/v2-50efe2d5a155f0390db4f7924db036f4_b.png",
+                       @"https://pic2.zhimg.com/f62e69de3c5e4879267d6366fdfd9c99_b.jpg",
+                       @"https://pic4.zhimg.com/7e111aa9d1884887a994ebb2d003cdaf_b.jpeg",
+                       @"https://pic1.zhimg.com/9916c0d1b8524013c75d1f5462ace6d8_b.jpeg",
+                       @"https://pic4.zhimg.com/acdf9eb13b39106c897cab70603ab923_b.jpeg",
+                       @"https://pic3.zhimg.com/6093f8575ce4577a495d83f0841f2e16_b.png",
+                       @"https://pic1.zhimg.com/671d035f870f7348277637d35d175e44_b.jpeg",
+                       @"https://pic1.zhimg.com/8eba0b0753f75a4b8c3db7aaefc9028c_b.jpeg",
+                       @"https://pic2.zhimg.com/f551b10552c59835034268a994f061f5_b.jpeg",
+                       @"https://pic4.zhimg.com/8f5689e182d09ab689a9521bad98b68f_b.jpeg",
                        ];
     
     _imageLinks = links;

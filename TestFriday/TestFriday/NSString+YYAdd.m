@@ -6,8 +6,13 @@
 //  Copyright © 2016年 com.snailgames. All rights reserved.
 //
 
-#import "NSString.h"
+#import "NSString+YYAdd.h"
 
-@implementation NSString
+@implementation NSString (YYAdd)
+
+- (NSString *)stringByTrim {
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    return [self stringByTrimmingCharactersInSet:set];
+}
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface YYFeedListExample : NSObject
+@interface YYFeedListExample : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *titles;
+@property (strong, nonatomic) NSMutableArray *classNames;
+@property (strong, nonatomic) NSMutableArray *images;
+
+
+- (void)addCell:(NSString *)title class:(NSString *)className image:(NSString *)imageName;
 
 @end

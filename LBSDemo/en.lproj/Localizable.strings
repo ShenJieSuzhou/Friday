@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  LBSDemo
+
+  Created by silicon on 17/5/15.
+  Copyright © 2017年 com.snailgames. All rights reserved.
+*/
+"QRCodeDes" = "Please scan the code in the box";

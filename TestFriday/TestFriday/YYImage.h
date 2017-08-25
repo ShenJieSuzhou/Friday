@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface YYImage : NSObject
+@interface YYImage : UIImage
+
++ (nullable YYImage *)imageNamed:(NSString *)name;
 
 @end

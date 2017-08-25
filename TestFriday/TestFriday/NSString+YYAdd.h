@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString : NSObject
+@interface NSString (YYAdd)
+
+
+- (NSString *)stringByTrim;
 
 @end

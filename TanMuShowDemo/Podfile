@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+target 'TanMuShowDemo' do
+pod 'BarrageRenderer'
+pod 'MLEmojiLabel'
+pod 'lottie-ios'
+
+end
